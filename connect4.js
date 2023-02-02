@@ -146,8 +146,8 @@ function checkForWin() {
   // creating a column ( to see if there is a winnwer)
   // creating a diagonal ( to see if there is a winnwer)
 
-  for (const y = 0; y < HEIGHT; y++) {
-    for (const x = 0; x < WIDTH; x++) {
+  for (let y = 0; y < HEIGHT; y++) {
+    for (let x = 0; x < WIDTH; x++) {
       let horiz = [[y, x], [y, x + 1], [y, x + 2], [y, x + 3]];
       let vert = [[y, x], [y + 1, x], [y + 2, x], [y + 3, x]];
       let diagDR = [[y, x], [y + 1, x + 1], [y + 2, x + 2], [y + 3, x + 3]];
