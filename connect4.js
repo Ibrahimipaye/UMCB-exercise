@@ -32,7 +32,7 @@ function makeHtmlBoard() {
   const makeHtmlBoard = document.getElementById("board")
 
   // TODO: add comment for this code
-  // check roll to see if there is a winner 
+  // create table tr and td
   let top = document.createElement("tr");
   top.setAttribute("id", "column-top");
   top.addEventListener("click", handleClick);
@@ -45,7 +45,7 @@ function makeHtmlBoard() {
   makeHtmlBoard.append(top);
 
   // TODO: add comment for this code
-  // create roll and column
+  // create  table tr and td
   for (let y = 0; y < HEIGHT; y++) {
     const row = document.createElement("tr");
     for (let x = 0; x < WIDTH; x++) {
